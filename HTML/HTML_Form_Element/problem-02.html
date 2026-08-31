@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Appointment booking form</title></head>
+    <body>
+        <h1>Clinic appointment Portal</h1>
+        <p>
+            Welcome to the official appointment portal. Please complete all required sections carefully with accurate personal, contact details before submitting your application. If you have questions regarding entry requirements, visit our Appointment FAQ page.
+        </p>
+        <h2>Clinic Hours & Availability</h2>
+<table border="1" cellpadding="5" cellspacing="0">
+    <thead>
+        <tr>
+            <th>Day</th>
+            <th>Working Hours</th>
+            <th>Department</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Monday – Friday</td>
+            <td>08:00 AM – 08:00 PM</td>
+            <td>All Specialties</td>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td>09:00 AM – 05:00 PM</td>
+            <td>General & Pediatrics</td>
+        </tr>
+        <tr>
+            <td>Sunday</td>
+            <td>10:00 AM – 02:00 PM</td>
+            <td>Emergency & Consultations</td>
+        </tr>
+    </tbody>
+</table>
+
+<br><hr><br>
+<form>
+        <p>
+
+            <label for="pat-id">PAtient ID</label>
+            <input type="text" name="patid" id="pat-id" pattern="[A-Z0-9a-z]{4}"><br>
+            <label for="name">Name</label>
+            <input type="text" placeholder="Entername" id="name" name="name"><br>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enteremail" id="email" name="email" maxlength="100"><br>
+            <label for="mobnum"> Mobile Number</label>
+            <input type="number" id="mobnum" name="mobnum" pattern="[0-9]{10}" maxlength="10"><br>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" min="01-01-1900" max="31-12-2025"><br>
+            <br>
+        </p><p>Preferred Communication method choice-<br>
+            <label for="pref-email">Prefferd email</label>
+            <input type="radio" id="pref-email" name="preffered_com" required><br>
+            <label for="prefphone">Preffered Phone</label>
+            <input type="radio" name="pref-email" id="prefphone" required><br>
+            </p>
+
+            <p>
+           
+            <label for="timedate">Select the time and date for appoinment</label>
+            <input type="datetime-local" id="timedate" name="timedate" >
+           <br>
+             <label for="reason">Reason for Visit / Additional Details:*</label><br>
+                        <textarea id="reason" name="visit_reason" rows="4" cols="50" minlength="10" maxlength="500" placeholder="Describe your symptoms or reason for scheduling..." required></textarea>
+             <select id="doctor" name="doctor" required> 
+                <label for="doctor">Select the doctor</label>
+                <option value="">Choose Doctor</option>
+                <option value="AKsingh">AK Singh-Orthodox</option>
+                <optiom value="PKaggarwal">PK Aggarwal-respiratory</optiom>
+                <option value="akki">Akki-digestion</option>
+                <option value="GLaggarwal">GL Aggarwal-psychology</option>
+                <option value="pankajkumar">Pankaj Kumar-legs</option>
+
+             </select>
+         
+        
+        </p>
+        <p>
+            Visit type<br>
+            <label for="newpatient">New Patient</label>
+            <input type="text" id="newpatient" name="visit_type" ><br>
+            <label for="followup">followup</label>
+            <input type="radio" id="followup" value="Follow_up" name="visit_type" >
+            <label for="consultation">Consutation</label>
+            <input type="radio" id="consultation" value="Consultation" name="visit_type" >
+            <label for="emergency">Emergency</label>
+            <input type="radio" id="emergency" name="visit_type" >
+            
+        </p>
+            
+            <p><label for="accept">Accept appointment terms</label>
+            <input type="checkbox" id="accept" value="Accept appointment terms" required></p>
+            
+        <p>
+            <input type="submit" value="Bppk appointment">
+            <input type="reset" value="reset form">
+        </p>
+    </form>
+    </body>
+</html>

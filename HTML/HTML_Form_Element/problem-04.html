@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+   <title>Employee Leave Request Form</title>
+</head>
+<body>
+
+    <h1>Employee Leave Request Portal</h1>
+    <p>Welcome to the internal HR leave management system. Please complete the form below to submit your leave request. Ensure all dates and details are accurate before submitting for manager approval. For company policy guidelines, visit the <a href="https://example.com/hr-policy" target="_blank">HR Leave Policy Overview</a>.</p>
+
+    <h2>Leave Categories Summary</h2>
+    <table border="1" cellpadding="6" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Annual Allowance</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Casual Leave (CL)</td>
+                <td>Short-term planned leave for personal matters</td>
+                <td>12 Days</td>
+            </tr>
+            <tr>
+                <td>Sick Leave (SL)</td>
+                <td>Unplanned leave for illness or medical appointments</td>
+                <td>10 Days</td>
+            </tr>
+            <tr>
+                <td>Earned Leave (EL)</td>
+                <td>Long-term privilege leave accrued over time</td>
+                <td>15 Days</td>
+            </tr>
+            <tr>
+                <td>Work From Home (WFH)</td>
+                <td>Remote working allowance subject to manager consent</td>
+                <td>24 Days</td>
+            </tr>
+            <tr>
+                <td>Other</td>
+                <td>Special circumstances (Maternity, Paternity, Bereavement)</td>
+                <td>As per policy</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><hr><br>
+
+    <form action="/submit-leave-request" method="POST" enctype="multipart/form-data">
+
+        <h2>Employee Information</h2>
+
+        <p>
+            <label for="emp-name">Employee Full Name:*</label><br>
+            <input type="text" id="emp-name" name="employee_name" placeholder="e.g. Alex Morgan" minlength="2" maxlength="100" required>
+        </p>
+
+        <p>
+            <label for="emp-id">Employee ID:*</label><br>
+            <input type="text" id="emp-id" name="employee_id" placeholder="e.g. EMP-10245" pattern="[0-9]{5}" title="Format: EMP- followed by 5 digits (e.g. EMP-10245)" required>
+        </p>
+
+        <p>
+            <label for="emp-email">Corporate Email:*</label><br>
+            <input type="email" id="emp-email" name="employee_email" placeholder="alex.morgan@company.com" maxlength="100" required>
+        </p>
+
+        <p>
+            <label for="department">Department:*</label><br>
+            <select id="department" name="department" required>
+                <option value="">-- Select Department --</option>
+                <option value="hr">Human Resources</option>
+                <option value="engineering">Software Engineering</option>
+                <option value="finance">Finance & Accounting</option>
+                <option value="marketing">Marketing & PR</option>
+                <option value="sales">Sales & Business Development</option>
+                <option value="operations">Operations & Logistics</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="request-status">Request Status:</label><br>
+            <input type="text" id="request-status" name="request_status" value="Pending Approval" readonly>
+        </p>
+
+        <h2>Leave Details & Schedule</h2>
+
+        <p>
+            <label for="leave-type">Leave Category:*</label><br>
+            <select id="leave-type" name="leave_type" required>
+                <option value="">-- Choose Leave Type --</option>
+                <option value="casual_leave">Casual Leave</option>
+                <option value="sick_leave">Sick Leave</option>
+                <option value="earned_leave">Earned Leave</option>
+                <option value="work_from_home">Work From Home</option>
+                <option value="other">Other</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="start-date">Start Date:*</label><br>
+            <input type="date" id="start-date" name="start_date" min="2026-01-01" max="2026-12-31" required>
+        </p>
+
+        <p>
+            <label for="end-date">End Date:*</label><br>
+            <input type="date" id="end-date" name="end_date" min="2026-01-01" max="2026-12-31" required>
+        </p>
+
+        <p>
+            <label for="leave-days">Total Leave Days:*</label><br>
+            <input type="number" id="leave-days" name="leave_days" min="0.5" max="60" step="0.5"  required>
+        </p>
+
+        <p>
+            Reachable During Leave?*<br>
+            <input type="radio" id="reachable-yes" name="is_reachable" value="yes" required>
+            <label for="reachable-yes">Yes (Available on email/phone)</label><br>
+
+            <input type="radio" id="reachable-no" name="is_reachable" value="no">
+            <label for="reachable-no">No (Out of reach / Off-grid)</label>
+        </p>
+
+        <p>
+            <label for="alt-contact">Alternate Contact Number (Emergency):*</label><br>
+            <input type="tel" id="alt-contact" name="alt_contact" placeholder="10-digit phone number" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" required>
+        </p>
+
+        <p>
+            <label for="reason">Reason for Leave:*</label><br>
+            <textarea id="reason" name="leave_reason" rows="4" cols="50" minlength="10" maxlength="400" placeholder="Provide brief explanation for your leave request..." required></textarea>
+        </p>
+
+        <p>
+            <label for="attachment">Upload Supporting Document (Medical Certificate / Travel Proof - Optional):</label><br>
+            <input type="file" id="attachment" name="attachment" >
+        </p>
+
+        <h2>Employee Declaration</h2>
+        <p>
+            <input type="checkbox" id="declaration" name="declaration_accepted" required>
+            <label for="declaration">I hereby declare that the details provided above are true and correct to the best of my knowledge, and I have handed over urgent tasks to my team.*</label>
+        </p>
+
+        <p>
+            <input type="submit" value="Submit Request">
+            <input type="reset" value="Reset Form">
+        </p>
+
+    </form>
+
+</body>
+</html>

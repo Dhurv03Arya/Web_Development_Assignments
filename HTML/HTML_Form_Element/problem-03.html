@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Course enrollment portal</title></head>
+    <body>
+        <h1>Online course enrollment</h1>
+        <p>Advance your career with industry-aligned technical courses. Complete the registration form below to create your student account, select your preferred course cohort, and customize your learning track. For full syllabus details, prerequisites, and learning outcomes, visit our <a href="https://example.com/course-info" target="_blank">Course Catalog & Syllabus Information</a></p>
+        <form>
+            <p>
+                <label for="name">Enter Name</label>
+                <input type="text" id="name" name="name" minlength="3" required>
+            </p>
+            <p>
+                <label for="email">Enter email</label>
+                <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" pattern="[0-9]{6}">
+            </p>
+            <p>
+                <label for="mobnum">Mobile number</label>
+                <input type="text" name="mobile_number" id="mobnum" pattern="[0-9]{10}">
+            </p>
+            <p>
+                <label for="dob">Date of birth</label>
+                <input type="date" id="dob" name="dob" minlength="01-01-2000">
+            </p>
+            <p>
+                <label for="course">Select Course</label>
+                <select id="course" name="course" required>
+                    <option value="">--select course---</option>
+                    <option value="python">Python</option>
+                    <option value="web">Web Development</option>
+                    <option value="c_lang">C Language</option>
+                    <option value="C++_lang">C++ language</option>
+                    <option value="cloud">Cloud Computing</option>
+                    <option value="java">Java Programming</option>
+                </select>
+            </p>
+            <p>
+                            <label for="batch">Select Batch / Session:*</label><br>
+                            <select id="batch" name="batch" required>
+                                <option value="">-- Select Preferred Schedule --</option>
+                                <option value="fall_2026_weekday">Fall 2026 - Weekday Morning (Mon/Wed/Fri)</option>
+                                <option value="fall_2026_evening">Fall 2026 - Weekday Evening (Tue/Thu)</option>
+                                <option value="fall_2026_weekend">Fall 2026 - Weekend Intensive (Sat/Sun)</option>
+                                <option value="winter_2027_bootcamp">Winter 2027 - Full-Time Bootcamp</option>
+                            </select>
+                        </p>
+            <p>
+                <b>Method of Learning</b><br>
+                <input type="radio" id="online" name="learning">
+                <label for="online">Online</label>
+                <input type="radio" id="offline" name="learning">
+                <label for="offline">Online</label>
+                <input type="radio" id="hybrid" name="learning">
+                <label for="hybrid">Hybrid</label>
+            </p>
+            <p><B>Technical Skill Areas</B></p>
+            <p>
+                <input type="checkbox" id="java" name="areas">
+                <label for="java">Java</label>
+            </p>
+            <p>
+                <input type="checkbox" id="python" name="areas">
+                <label for="python">Python</label>
+            </p>
+            <p>
+                <input type="checkbox" id="webdev" name="areas">
+                <label for="webdev">web Devlopment</label>
+            </p>
+            <p>
+                <input type="checkbox" id="datastruct" name="areas">
+                <label for="datastruct">Data Structures</label>
+            </p>
+            <p>
+                <input type="checkbox" id="database" name="areas">
+                <label for="database">Database</label>
+            </p><hr>
+            <p>
+                <label for="edulevel">Education level</label>
+                <input type="text" id="edulevel" name="edu_level">
+            </p>
+            <p>
+                <label for="Institution">Institution</label>
+                <input type="textbox" id="Institution" name="Institution">         
+            </p>
+            <p>
+                <label for="year">Year</label>
+                <input type="text" id="year" name="year" pattern="[0-9]{4}">
+            </p>
+
+            <p>
+                <label for="coding-experience">Prior Programming Experience (in Years):*</label><br>
+                <input type="number" id="coding-experience" name="coding_experience" min="0" max="20" step="0.5" value="0" required>
+            </p>
+            <p>
+                <label for="portfolio-url">GitHub / Portfolio Profile URL:</label><br>
+                <input type="url" id="portfolio-url" name="portfolio_url" placeholder="https://github.com/yourusername" pattern="https://.*" title="URL must start with https://">
+            </p>
+            <p>
+                <label for="learning_goals">Learning Goals</label><br>
+                <textarea id="learning_goals" name="learning_goals" placeholder="Describe your learning goals" maxlength="500" rows="5" required></textarea>
+            </p>
+            <p>
+                 <input type="checkbox" id="confirmation" name="terms_confirmed" required>
+                 <label for="confirmation">I confirm that all provided registration details are accurate and agree to abide by the platform code of conduct.*</label>
+            </p>
+            <p>
+                <input type="submit" value="Complete Registration">
+                <input type="reset" value="Reset Registration Form">
+            </p>
+
+        </form>
+    </body>
+</html>

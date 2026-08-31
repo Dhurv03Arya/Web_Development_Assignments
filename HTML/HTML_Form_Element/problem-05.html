@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Checkout Portal</title></head>
+    <body>
+        <h1>Checkout page</h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum illum necessitatibus reprehenderit, blanditiis consequatur quam laboriosam repudiandae pariatur minima ex illo officiis quae soluta! Dicta natus reiciendis cupiditate quod delectus?<br><br>
+            <img src="https://imgs.search.brave.com/zQPdHgABfrRvBQ5_QQnwrjEsEYNlM3RKr1qjgmJ-Pjo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/bWFnbmlmaWMuY29t/L3ByZW1pdW0tcGhv/dG8vb25saW5lLXNo/b3BwaW5nLXBhcGVy/LWNhcnRvbnMtcGFy/Y2VsLXdpdGgtc2hv/cHBpbmctY2FydC1s/b2dvLWxhcHRvcC1r/ZXlib2FyZC13aGlj/aC13ZWItc3RvcmUt/c2hvcC1zY3JlZW4t/c2hvcHBpbmctc2Vy/dmljZS1vbmxpbmUt/d2ViLW9mZmVycy1o/b21lLWRlbGl2ZXJ5/XzQwNTg1Ny0xNi5q/cGc_c2VtdD1haXNf/aHlicmlkJnc9NzQw/JnE9ODA">
+        </p>
+        <table border="2" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Unit PRice</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                     <th>Lakme sunscreen</th>
+                     <th>1</th>
+                     <th>400</th>
+                     <th>400</th>
+                </tr>
+                <tr>
+                     <th>Face Tech-Bamboo Charcoal</th>
+                     <th>3</th>
+                     <th>50</th>
+                     <th>150</th>
+                </tr>
+                <tr>
+                     <th>Naliao-Manuka Honey</th>
+                     <th>5</th>
+                     <th>60</th>
+                     <th>300</th>
+                </tr>
+                <tr>
+                     <th></th>
+                     <th></th>
+                     <th></th>
+                     <th>850</th>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            Click on the respecttive link to continue shopping:<a  href="https://www.example.com/">Amaton</a>
+        </p>
+        <form>
+        <h3>Customer Information</h3>
+         <p>
+            <label for="name">Customer Name</label>
+            <input type="text" id="name" name="name" required>
+        </p>
+        <p>
+            <label for="email">Customer Email</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+            <label for="mobnum">Customer Mobile Number</label>
+            <input type="text" id="mobnum" name="mobnum" pattern="[0-9]{10}" required>
+        </p>
+        <hr>
+        <h3>Delivery Address</h3>
+        <p>
+            <label for="house-street">House/Street</label>
+            <input type="text" id="house-street" name="house-street" required>
+        </p>
+        <p>
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required>
+        </p>
+        <p>
+            <label for="state">State / Province:</label><br>
+             <select id="state" name="state" autocomplete="address-level1" required>
+                <option value="">-- Select State --</option>
+                <option value="NY">New York</option>
+                <option value="CA">California</option>
+                <option value="TX">Texas</option>
+                <option value="FL">Florida</option>
+                <option value="IL">Illinois</option>
+                <option value="WA">Washington</option>
+            </select>
+        </p>
+        <p>
+            <label for="Postal code">Postal Code</label>
+            <input type="text" id="Postal code" name="postal_code" pattern="[0-9]{7}" required>
+        </p>
+        <p>
+            <label for="country">Country:</label><br>
+            <select id="country" name="country" required>
+                <option value="">--select country--</option>
+                <option value="india">India</option>
+                <option value="China">China</option>
+                <option value="nepal">Nepal</option>
+                <option value="sri lanka">Sri lanka</option>
+                <option value="Bhopal">Bhopal</option>
+            </select>
+        </p>
+        <hr>
+            <h3>Delivery Choices</h3>
+        <p>
+             
+            <input type="radio" id="standard" name="choice" required>
+            <label for="standard">Standard</label>
+        </p>
+        <p>
+             
+            <input type="radio" id="sameday" name="choice" required>
+            <label for="sameday">Sameday</label>
+        </p>
+        <p>
+             
+            <input type="radio" id="express" name="choice" required>
+            <label for="express">Express</label>
+        </p>
+        <hr>
+        <h3>Payment Choices</h3>
+        <p>
+            <input type="radio" id="card" name="payment" required>
+            <label for="card">Card</label>
+        </p>
+         <p>
+            <input type="radio" id="cod" name="payment" required>
+            <label for="cod">Cash on Delivery</label>
+        </p>
+         <p>
+            <input type="radio" id="Upi" name="payment" required>
+            <label for="upi">UPI/Online Payment</label>
+        </p>
+        <p>
+            <label for="del-ins">Delivery Instructions</label><br>
+            <textarea id="del-ins" name="del_ins" rows="3" cols="40" placeholder="Enter delivery instructions here" max="500"></textarea>
+        </p>
+        <p>
+            <label for="coupon">Coupon/Promo code</label>
+            <input type="text" id="coupon" name="coupon" maxlength="7" pattern="AB-[0-9]" required>
+        </p>
+        <hr>
+        <p>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">Terms and conditions</label>
+        </p>
+        <p>
+            <input type="checkbox" id="confirm" name="confirm" required> 
+            <label for="confirm">Order Confirmation</label>
+        </p>
+         <p>
+            <input type="submit" value="Place Order">
+            <input type="reset" value="Reset controls">
+        </p>
+
+        </form>
+        </body>
+</html>
+       

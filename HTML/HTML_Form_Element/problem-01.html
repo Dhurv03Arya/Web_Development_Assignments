@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Admission Application form</title></head>
+    <body>
+        <h1>Admission Application Portal</h1>
+        <p>Welcome to the official admission portal. Please complete all required sections carefully with accurate personal, contact, and academic details before submitting your application. If you have questions regarding entry requirements, visit our <a href="[https://example.edu/admissions/faq](https://example.edu/admissions/faq)" target="_blank">Admissions FAQ page</a>.</p>
+
+<img src="[https://via.placeholder.com/800x200?text=Welcome+to+University+Admissions](https://via.placeholder.com/800x200?text=Welcome+to+University+Admissions)" alt="University Campus Banner" width="800" height="200">
+
+<form action="/submit-application" method="POST" enctype="multipart/form-data">
+
+   
+        <legend>Personal Details</legend>
+        
+        <p>
+            <label for="full-name">Full Name:*</label><br>
+            <input type="text" id="full-name" name="full_name" minlength="2" maxlength="100" required>
+        </p>
+
+        <p>
+            <label for="dob">Date of Birth:*</label><br>
+            <input type="date" id="dob" name="dob" min="1950-01-01" max="2010-12-31" required>
+        </p>
+
+        <p>
+            <label for="gender-male">Gender:*</label><br>
+            <input type="radio" id="gender-male" name="gender" value="male" required>
+            <label for="gender-male">Male</label>
+            <input type="radio" id="gender-female" name="gender" value="female">
+            <label for="gender-female">Female</label>
+            <input type="radio" id="gender-other" name="gender" value="other">
+            <label for="gender-other">Other</label>
+        </p>
+
+        <p>
+            <label for="category">Category:*</label><br>
+            <select id="category" name="category" required>
+                <option value="">-- Select Category --</option>
+                <option value="general">General</option>
+                <option value="obc">OBC</option>
+                <option value="sc">SC</option>
+                <option value="st">ST</option>
+                <option value="ews">EWS</option>
+            </select>
+        </p>
+        <legend>Contact & Account Details</legend>
+
+        <p>
+            <label for="email">Email Address:*</label><br>
+            <input type="email" id="email" name="email" maxlength="100" required>
+        </p>
+
+        <p>
+            <label for="mobile">Mobile Number:*</label><br>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required>
+        </p>
+
+        <p>
+            <label for="app-pin">Application PIN (4 Digits):*</label><br>
+            <input type="password" id="app-pin" name="app_pin" pattern="[0-9]{4}" maxlength="4" title="Please enter a 4-digit security PIN" required>
+        </p>
+
+        <p>
+            <label for="address">Permanent Address:*</label><br>
+            <textarea id="address" name="address" rows="4" cols="50" minlength="10" maxlength="300" required></textarea>
+        </p>
+
+        <legend>Academic Details & Program Selection</legend>
+
+        <p>
+            <label for="program">Select Course/Program:*</label><br>
+            <select id="program" name="program" required>
+                <option value="">-- Choose Program --</option>
+                <option value="bsc_cs">B.Sc. Computer Science</option>
+                <option value="ba_english">B.A. English Literature</option>
+                <option value="bcom_hons">B.Com. Honours</option>
+                <option value="btech_me">B.Tech. Mechanical Engineering</option>
+                <option value="bca">Bachelor of Computer Applications (BCA)</option>
+                <option value="bba">Bachelor of Business Administration (BBA)</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="qualification">Previous Qualification:*</label><br>
+            <input type="text" id="qualification" name="qualification" placeholder="e.g. Higher Secondary (10+2)" required>
+        </p>
+
+        <p>
+            <label for="school-name">School/College Name:*</label><br>
+            <input type="text" id="school-name" name="school_name" maxlength="150" required>
+        </p>
+
+        <p>
+            <label for="passing-year">Passing Year:*</label><br>
+            <input type="number" id="passing-year" name="passing_year" min="2015" max="2026" step="1" required>
+        </p>
+
+        <p>
+            <label for="cgpa">Percentage / CGPA:*</label><br>
+            <input type="number" id="cgpa" name="cgpa" min="0" max="100" step="0.01" required>
+        </p>
+
+        <p>
+            Extracurricular Interests (Multiple choice):<br>
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label><br>
+            <input type="checkbox" id="arts" name="interests" value="arts">
+            <label for="arts">Arts & Music</label><br>
+            <input type="checkbox" id="nss" name="interests" value="nss_ncc">
+            <label for="nss">NSS / NCC</label>
+        </p>
+
+        <p>
+            <label for="document">Upload Academic Transcript (PDF/Image):*</label><br>
+            <input type="file" id="document" name="document" required>
+        </p>
+
+        <legend>Declaration</legend>
+        <p>
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">I hereby declare that all information provided above is true and accurate to the best of my knowledge.*</label>
+        </p>
+
+
+    <p>
+        <input type="submit" value="Submit Application">
+        <input type="reset" value="Reset Form">
+    </p>
+
+    </form>
+    </body>
+</html>
