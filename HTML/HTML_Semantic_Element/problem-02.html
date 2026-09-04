@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+    <head><title>ABC Company Portal</title></head>
+        <body>
+      <header>
+        
+        <h1>Abc Company</h1>
+        <p><i>innovatng intelligent cloud AnD Enterprise Systems</i></p>
+        <NAV>
+            <a href="#info">Company</a> |
+            <a href="#job_desc">Careers</a> |
+            <a href="#positions">open positions</a>|
+            <a href="#stack_sample">Engineering Stack</a>|
+            <a href="#culture-benefits">Culture and Benefits</a>|
+            <a href="#hiring_process">Hiring Benefits</a>|
+            <a href="#job_application">Apply Now</a>|
+            <a href="#contact">contact</a>
+        </NAV>
+      </header><br><br>
+      <a href="https://imgs.search.brave.com/mAeG1JzS3Fb796aMTfSwxZOTX4jC79oLhWSjVsa3tR8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyMS8w/Ny8yNi8xMS8zMy9i/dXNpbmVzc3dvbWVu/LTY0OTQwNzNfNjQw/LmpwZw"><img src="https://imgs.search.brave.com/mAeG1JzS3Fb796aMTfSwxZOTX4jC79oLhWSjVsa3tR8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyMS8w/Ny8yNi8xMS8zMy9i/dXNpbmVzc3dvbWVu/LTY0OTQwNzNfNjQw/LmpwZw"></a>
+
+      <hr>
+      <main>
+        <section id="info">
+            <h2>Company Introduction and Culture</h2>
+                 <p>Welcome to the ABC Company. It is a growing technology company where we innovate and excel.</p>
+             <h4>Employee Value Proposition</h4>
+                 <p>At ABC Company, we believe in empowering our employees to reach their full potential. We offer a dynamic work environment, competitive compensation, and comprehensive benefits to support our team members' personal and professional growth.</p>
+             <blockquote>
+                 <p>"Working at ABC Company has been an incredible journey of growth and learning."</p>
+                 <cite>- John Doe, Software Engineer</cite>
+             </blockquote>
+        </section>
+        <a href="https://imgs.search.brave.com/pWYi15drL7s9t3B0FZgHN1MlvOo92GIiGPtS65A2tjc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI4/MjU5NjM2NC9waG90/by9hYnN0cmFjdC1w/ZW9wbGUtc2lsaG91/ZXR0ZXMtYWdhaW5z/dC1nbGFzcy5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9MDBq/YXc5YklWMjdJZGVh/bVp4c0N6dHJvSmdP/RFdiZGR0OGw4Q2FK/UUN0dz0"><img src="https://imgs.search.brave.com/pWYi15drL7s9t3B0FZgHN1MlvOo92GIiGPtS65A2tjc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI4/MjU5NjM2NC9waG90/by9hYnN0cmFjdC1w/ZW9wbGUtc2lsaG91/ZXR0ZXMtYWdhaW5z/dC1nbGFzcy5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9MDBq/YXc5YklWMjdJZGVh/bVp4c0N6dHJvSmdP/RFdiZGR0OGw4Q2FK/UUN0dz0" width-="300"> </a>
+        <section id="stack_sample">
+            <h2>Engineering Stackand code Samples</h2>
+            <p>Abc Company relies on robusr microservice patterns written in go and type script,rynning on scalable kubernetes nodes</p>
+            <p>technical example:
+                <pre><code>
+ package main
+
+import (
+    "context"
+    "fmt"
+    "time"
+)
+
+// ABCWorker manages concurrent job execution across ABC Company services
+type ABCWorker struct {
+    ID       int
+    WorkChan chan string
+}
+
+func (w *ABCWorker) Execute(ctx context.Context) {
+    for {
+        select {
+        case job := <-w.WorkChan:
+            fmt.Printf("[ABC Worker %d] Processing Job: %s at %s\n", w.ID, job, time.Now().Format(time.RFC3339))
+        case <-ctx.Done():
+            fmt.Printf("[ABC Worker %d] Shutting down clean...\n", w.ID)
+            return
+        }
+    }
+}  
+                </code></pre>
+            </p>
+        </section>
+        <hr>
+        <img src="https://www.example.com?/" alt="Company Logo">
+
+        <section id="positions">
+            <h2>Open Positions</h2>
+            <table border="1" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th>Role Title</th>
+                        <th>Department</th>
+                        <th>Location</th>
+                        <th>Experience Level</th>
+                        <th>Type</th>
+                        <th>Closing Date</th>
+                    </tr>
+                </thead>
+                ,<tbody>
+                    <tr>
+                        <td>Software Engineer</td>
+                        <td>Engineering</td>
+                        <td>San Francisco, CA</td>
+                        <td>Mid-Level</td>
+                        <td>Full-Time</td>
+                        <td>2024-12-31</td>
+                    </tr>
+                    <tr>
+                        <td>Data Scientist</td>
+                        <td>Data Science</td>
+                        <td>New York, NY</td>
+                        <td>Senior-Level</td>
+                        <td>Full-Time</td>
+                        <td>2024-11-30</td>
+                    </tr>
+                    <tr>
+                        <td>Product Manager</td>
+                        <td>Product</td>
+                        <td>Remote</td>
+                        <td>Mid-Level</td>
+                        <td>Full-Time</td>
+                        <td>2024-10-15</td>
+                    </tr>
+                    <tr>
+                        <td>UX Designer</td>
+                        <td>Design</td>
+                        <td>Los Angeles, CA</td>
+                        <td>Entry-Level</td>
+                        <td>Full-Time</td>
+                        <td>2024-09-30</td>
+                    </tr>
+                    <tr>
+                        <td>DevOps Engineer</td>
+                        <td>Engineering</td>
+                        <td>Seattle, WA</td>
+                        <td>Mid-Level</td>
+                        <td>Full-Time</td>
+                        <td>2024-12-15</td>
+                    </tr>
+                    <tr>
+                        <td>Marketing Specialist</td>
+                        <td>Marketing</td>
+                        <td>Chicago, IL</td>
+                        <td>Entry-Level</td>
+                        <td>Full-Time</td>
+                        <td>2024-11-20</td>
+                    </tr>
+                    <tr>
+                        <td>Customer Support Representative</td>
+                        <td>Support</td>
+                        <td>Remote</td>
+                        <td>Entry-Level</td>
+                        <td>Full-Time</td>
+                        <td>2024-10-31</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <hr>
+        <img src="https://www.example.com?/" alt="Company Logo">
+        <section id="job_desc">
+            <H2>Job Description</H2>
+            <ol>
+                <H4.>Software Engineer</H4>
+                <UL>
+                    <li>Design, develop, and maintain software applications.</li>
+                    <li>Collaborate with cross-functional teams to define and implement new features.</li>
+                    <li>Write clean, efficient, and well-documented code.</li>
+                    <li>Participate in code reviews and provide constructive feedback.</li>
+                    <li>Troubleshoot and resolve software defects and issues.</li>
+                </UL>
+                <H4.>Data Scientist</H4>
+                <UL>
+                    <li>Analyze large datasets to extract meaningful insights.</li>
+                    <li>Develop predictive models and machine learning algorithms.</li>
+                    <li>Collaborate with stakeholders to understand business requirements.</li>
+                    <li>Communicate findings and recommendations effectively.</li>
+                    <li>Stay updated with the latest trends and advancements in data science.</li>
+                </UL>
+                <H4.>Product Manager</H4>
+                <UL>
+                    <li>Define product vision, strategy, and roadmap.</li>
+                    <li>Gather and prioritize product requirements from stakeholders.</li>
+                    <li>Work closely with engineering, design, and marketing teams.</li>
+                    <li>Monitor product performance and user feedback.</li>
+                    <li>Drive product launches and go-to-market strategies.</li>
+                </UL>
+                <H4.>UX Designer</H4>
+                <UL>
+                    <li>Conduct user research and gather insights to inform design decisions.</li>
+                    <li>Create wireframes, prototypes, and visual designs for web and mobile applications.</li>
+                    <li>Collaborate with product managers and developers to ensure a seamless user experience.</li>
+                    <li>Conduct usability testing and iterate on designs based on feedback.</li>
+                    <li>Stay updated with the latest design trends and best practices.</li>
+                </UL>
+                <H4.>DevOps Engineer</H4>
+                <UL>
+                    <li>Design, develop, and maintain CI/CD pipelines.</li>
+                    <li>Implement and maintain infrastructure as code.</li>
+                    <li>Collaborate with development teams to ensure smooth deployments.</li>
+                    <li>Monitor and optimize system performance and reliability.</li>
+                    <li>Implement security best practices and compliance measures.</li>
+                </UL>
+                </H4.>Marketing Specialist</H4>
+                <UL>
+                    <li>Develop and execute marketing campaigns across various channels.</li>
+                    <li>Conduct market research and analyze consumer behavior.</li>
+                    <li>Create engaging content for social media, blogs, and email marketing.</li>
+                    <li>Collaborate with cross-functional teams to align marketing strategies with business goals.</li>
+                    <li>Monitor and report on campaign performance and ROI.</li>
+                </UL>
+                </H4.>Customer Support Representative</H4>
+                <UL>
+                    <li>Provide exceptional customer service through various channels (phone, email, chat).</li>
+                    <li>Resolve customer inquiries and issues in a timely and professional manner.</li>
+                    <li>Document customer interactions and maintain accurate records.</li>
+                    <li>Collaborate with internal teams to address customer needs and feedback.</li>
+                    <li>Stay updated on product knowledge and company policies to assist customers effectively.</li>
+                </UL>
+            </ol>
+        </section>
+        <img src="https://www.example.com?/" alt="Company Logo">
+        <section id="culture-benefits">
+            <h2>Culture and Benefits</h2>
+            <ol>
+                <li>Collaborative and inclusive work environment.</li>
+                <li>Competitive salary and comprehensive benefits package.</li>
+                <li>Opportunities for professional growth and development.</li>
+                <li>Flexible work arrangements and remote work options.</li>
+                <li>Access to cutting-edge technology and tools.</li>
+                <li>Comprehensive medical coverage for employees and dependents.</li>
+            </ol>
+        </section>
+        <hr>
+        <section id="hiring_process">
+            <h2>Hiring Process</h2>
+            <h3>Sequential Stages</h3>
+            <ol>
+                <li>Initial screening and resume review.</li>
+                <li>First-round interviews with hiring managers.</li>
+                <li>Technical assessments or coding challenges.</li>
+                <li>Final interviews with senior leadership.</li>
+                <li>Background checks and reference verification.</li>
+            </ol>
+            <h3>Stage Definitions</h3>
+            <dl>
+                <dt>Initial Screening</dt>
+                <dd>Review of resumes and applications to shortlist candidates based on qualifications and experience.</dd>
+                <dt>First-Round Interviews</dt>
+                <dd>Interviews conducted by hiring managers to assess candidates' skills, experience, and cultural fit.</dd>
+                <dt>Technical Assessments</dt>
+                <dd>Coding challenges or technical tests to evaluate candidates' problem-solving abilities and technical knowledge.</dd>
+                <dt>Final Interviews</dt>
+                <dd>Interviews with senior leadership to assess candidates' overall fit for the organization and team.</dd>
+                <dt>Background Checks</dt>
+                <dd>Verification of candidates' employment history, education, and references to ensure accuracy and integrity.</dd>
+            </dl>
+        </section>
+        <hr>
+        <aside id="recruiter_guidance">
+            <h2>Recruiter guidance and tips</h2>
+            <dl>
+                <dt>candidate Tip</dt>
+                <dd>Prepare thoroughly for interviews by researching the company, understanding the role, and practicing common interview questions.</dd>
+                <dt>Recruiter Tip</dt>
+                <dd>Establish clear communication with candidates throughout the hiring process to ensure a positive experience.</dd>
+            </dl>
+        </aside>
+        <hr>
+        <section id="job_application">
+            <h2>Job Application</h2>
+        <form>
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+            <p>
+                <label for="mobnum">Mobile Number:</label>
+                <input type="tel" id="mobnum" name="mobnum" pattern="[0-9]{10}" required>
+            </p>
+            <p>
+                <select name="position" id="position" required>
+                    <option value="">Select Position</option>
+                    <option value="software_engineer">Software Engineer</option>
+                    <option value="data_scientist">Data Scientist</option>
+                    <option value="product_manager">Product Manager</option>
+                    <option value="ux_designer">UX Designer</option>
+                    <option value="devops_engineer">DevOps Engineer</option>
+                    <option value="marketing_specialist">Marketing Specialist</option>
+                    <option value="customer_support_representative">Customer Support Representative</option>
+                </select>
+            </p>
+            <p>
+                <label for="exp">Total Experience(in yrs):</label>
+                <input type="number" id="exp" name="exp" min="1" max="40" required>
+            </p>
+            <b>Availability:</b>
+            <p>
+                <input type="radio" id="imm" name="availability" value="immediate" required>
+                <label for="imm">Immediate Availability</label>
+            </p>
+            <p>
+                <input type="radio" id="1month" name="availability" value="1_month">
+                <label for="1month">Available in 1 Month</label>
+            </p>
+            <p>
+                <input type="radio" id="contract" name="availability" value="contract">
+                <label for="contract">Contract</label>
+            </p>
+            <p>
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            </p>
+            <p>
+                <label for="link">Portfolio/Github link:</label>
+                <input type="url" id="link" name="link" required>
+            </p>
+            <p>
+                <label for="place">Preferred Location:</label>
+                <select name="place" id="place" required>
+                    <option value="">Select Location</option>
+                    <option value="new_york">New York</option>
+                    <option value="london">London</option>
+                    <option value="tokyo">Tokyo</option>
+                </select>
+            </p>
+            <p>
+                <label for="over_letter">Cover Letter:</label>
+                <textarea id="over_letter" name="over_letter" rows="5" cols="40" required></textarea>
+            </p>
+            <p>
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">I consent to the processing of my personal data for recruitment
+            </p>
+            <p>
+                <input type="submit" value="Submit Application">
+                <input type="reset" value="Reset Form">
+            </p>
+        </form>
+        </section>
+      </main>
+      <hr>
+      <footer id="contact">
+        
+        <h3>Contact Information</h3>
+        <p>&copy; 2023 Company Name. All rights reserved.</p>
+        <p>Email: info@company.com</p>
+        <p>Phone: +1 234 567 890</p>
+        <p>Address: 123 Main Street, City, Country</p>
+      </footer>
+    </body>
+</html>
