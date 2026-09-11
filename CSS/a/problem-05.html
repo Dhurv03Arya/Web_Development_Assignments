@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - Colors and Text Alignment</title>
+</head>
+<body>
+    <header style="background-color: rgb(197, 89, 0);text-align: center;">
+    <h1 style="color: white;">GRAND FOOD & CULTURE FESTIVAL</h1>
+    <p>Taste • Culture • Celebration</p>
+
+    <nav style="background-color: rgb(250, 236, 209);">
+        <a href="#home">Home</a> | 
+        <a href="#festival">Festival</a> | 
+        <a href="#food-zones">Food Zones</a> | 
+        <a href="#schedule">Schedule</a> | 
+        <a href="#register">Register</a> | 
+        <a href="#contact">Contact</a>
+    </nav>
+    </header>
+    <main>
+        <section id="home" style="background-color: rgb(251, 238, 213);">
+    <h2>Welcome to the Festival</h2>
+    <p>Experience delicious food, traditional recipes and cultural performances from different regions of India. Discover authentic flavours, meet talented chefs and enjoy an unforgettable celebration of food and culture with your family and friends.</p>
+    <p>🗓️ 15 – 17 October 2026 &nbsp;&nbsp;&nbsp;&nbsp; 📍 City Exhibition Ground</p>
+        </section>
+    <section id="food-zones">
+     <h2  style="color: rgb(199, 92, 5);text-align: center;">Food Zones</h2>
+    </section>
+     <section style="background-color: rgb(255, 207, 215);color: purple;">
+     <h3  style="text-align: center;">North India</h3>
+     <ul>
+        <li>Chole Bhature</li>
+        <li>Paneer Tikka</li>
+        <li>Rajma Chawal</li>
+     </ul>
+    </section>
+    <section style="background-color: rgb(205, 250, 205);color: green;">
+    <h3 style="text-align: center;">South India</h3>
+    <ul>
+        <li>Dosa</li>
+        <li>Idli</li>
+        <li>Vada</li>
+    </ul>
+    </section>
+    <section style="background-color: rgb(255, 203, 255);color: purple;">
+    <h3 style="text-align: center;">Desserts</h3>
+    <ul>
+        <li>Jalebi</li>
+        <li>Gulab Jamun</li>
+        <li>Kheer</li>
+    </ul>
+    </section>
+    <section style="background-color: rgb(219, 219, 245);">
+    <h2 style="color: rgb(67, 67, 200);text-align: center;">Visitor Journey</h2>
+    <ol>
+        <li>Register for the festival</li>
+        <li>Collect your visitor pass</li>
+        <li>Explore different food zones</li>
+        <li>Attend live performances</li>
+        <li>Enjoy the evening celebration</li>
+    </ol>
+    </section>
+    <section id="schedule" style="background-color: rgb(255, 255, 205);text-align: center;">
+    <h2 style="color: orange;">Festival Schedule</h2>
+    <table border="1" width="100%">
+        <thead style="color: white;background-color: rgb(200, 107, 0);">
+            <tr>
+                <th>Time</th>
+                <th>Event</th>
+                <th>Venue</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>10:00 AM</td>
+                <td>Festival Opening</td>
+                <td>Main Stage</td>
+            </tr>
+            <tr>
+                <td>12:00 PM</td>
+                <td>Live Cooking Show</td>
+                <td>Food Arena</td>
+            </tr>
+            <tr>
+                <td>03:00 PM</td>
+                <td>Cultural Performance</td>
+                <td>Open Theatre</td>
+            </tr>
+            <tr>
+                <td>06:00 PM</td>
+                <td>Chef Competition</td>
+                <td>Food Arena</td>
+            </tr>
+            <tr>
+                <td>08:00 PM</td>
+                <td>Music & Celebration</td>
+                <td>Main Stage</td>
+            </tr>
+        </tbody>
+    </table>
+    </section >
+    <section style="background-color: rgb(255, 206, 214);color: rgb(219, 86, 108);text-align: center;">
+    <h2 >Special Announcement</h2>
+    <p><em>"The first 500 visitors will receive a complimentary festival souvenir!"</em></p>
+    <p>— Event Organizer</p>
+    </section>
+    <section style="background-color: rgb(218, 255, 218);color: green;">
+    <h2 style="text-align: center;">Important Visitor Information</h2>
+    <dl>
+        <dt><strong>Vegetarian</strong></dt>
+        <dd>Food prepared without meat or fish.</dd>
+        
+        <dt><strong>Non-Vegetarian</strong></dt>
+        <dd>Food that may contain meat, chicken or fish.</dd>
+        
+        <dt><strong>Food Zone</strong></dt>
+        <dd>Dedicated area featuring regional cuisines.</dd>
+    </dl>
+    </section>
+    <section id="register" style="background-color: rgb(254, 207, 254); text-align: center;">
+    <h2 style="color: purple;">Register as a Visitor</h2>
+    <form>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="mobile">Mobile:</label>
+        <input type="tel" id="mobile" name="mobile"><br><br>
+
+        <label for="city">City:</label>
+        <select id="city" name="city">
+            <option value="">Select City</option>
+        </select><br><br>
+
+        <label for="preference">Food Preference:</label>
+        <select id="preference" name="preference">
+            <option value="vegetarian">Vegetarian</option>
+        </select><br><br>
+
+        <label for="why">Why are you attending?</label><br>
+        <textarea id="why" name="why" rows="4" cols="40" placeholder="Tell us why you want to attend..."></textarea><br><br>
+
+        <input type="checkbox" id="terms" name="terms">
+        <label for="terms">I agree to the terms and conditions.</label><br><br>
+
+        <input type="submit" value="REGISTER NOW">
+        <input type="reset" value="RESET">
+    </form>
+    </section>
+</body>
+</html>
